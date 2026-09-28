@@ -44,7 +44,7 @@ Current email mastheads:
 | File | Size | Rendered | Flattened onto | Used by |
 |---|---|---|---|---|
 | `brands/paddle-pub/logo-horizontal-email.png` | 480×98 | 240×49 | `#F2F7F9` | `Paddle Pub - Franchisee Forms` (n8n) |
-| `brands/trolley-pub/logo-horizontal-email.png` | 480×100 | 240×50 | `#FFF8E7` | `Trolley Pub - Franchisee Forms` (n8n) |
+| `brands/trolley-pub/logo-horizontal-email.png` | 480×100 | 240×50 | `#F5F5F5` | `Trolley Pub - Franchisee Forms` (n8n) |
 
 The "flattened onto" colour is that brand's `c.paper` token in the workflow's "Format Email"
 node — the masthead cell's background. Read it from the node rather than guessing, or the
