@@ -47,12 +47,34 @@ Current n8n notification mastheads, each inside the hero cell of the "Format Ema
 
 | File | Size | Rendered | Sits on | Used by |
 |---|---|---|---|---|
-| `brands/paddle-pub/logo-horizontal-email-light.png` | 480×70 | 240×35 | `c.primary` `#0E4E64` | `Paddle Pub - Franchisee Forms`, `Paddle Pub - Newsletter Signups` |
-| `brands/trolley-pub/logo-horizontal-email-light.png` | 480×60 | 240×30 | `c.primary` `#433E3B` | `Trolley Pub - Franchisee Forms`, `Trolley Pub - Newsletter Signups` |
+| `brands/paddle-pub/logo-long-email-light.png` | 480×71 | 240×35 | `c.primary` `#0E4E64` | `Paddle Pub - Franchisee Forms`, `Paddle Pub - Newsletter Signups` |
+| `brands/trolley-pub/logo-long-email-light.png` | 480×58 | 240×29 | `c.primary` `#433E3B` | `Trolley Pub - Franchisee Forms`, `Trolley Pub - Newsletter Signups` |
+The Paddle Pub and Trolley Pub files are the franchise kit's `*-mark-long.svg` wordmarks with
+the dark letters recoloured white and the wheel kept in its brand colour. The older
+`logo-horizontal-email*.png` files stay published because sent emails reference them.
 
-The Paddle Pub light variant is the site's navy/teal wordmark with the navy recoloured white;
-the site has no white wordmark of its own. The older `logo-horizontal-email.png` files
-(flattened onto the light page colour) stay published because sent emails reference them.
+### Cruisin' Tikis notification emails
+
+`brands/cruisin-tikis/email/` holds every image the `Cruisin Tikis - Franchisee Forms` and
+`Cruisin Tikis - Newsletter Signups` emails draw. The design is the cruisintikis.com site's, and
+its type (Signmaker, Costa Brisa) and art cannot load in a mail client, so each piece set in them
+was rendered from the site's own built CSS and fonts in headless Chrome at 2×. Only what varies
+per submission — the dock, the date, the field values — is live text.
+
+| File | Rendered | What |
+|---|---|---|
+| `logo-horizontal-email.png` | 200×31 | the site's header wordmark, on the cream header cell |
+| `hero-<form_type>.jpg` | 600×220 | sunrise gradient, palms, script eyebrow and Signmaker title; one per form type (`contact`, `private_charter`, `group_booking`, `newsletter_signup`) plus `hero-default.jpg` for any other |
+| `heading-*.png` | 552×40 | "Contact details", "Subscriber details", "Message" |
+| `stamp-*.png` | 56×56 | the "Find the dock" postage-stamp icons, one per field kind |
+| `wavy-rule.png` | 552×8 | the rule between rows |
+| `button-reply.png` | 220×48 | the primary button, "Reply by email" |
+| `bamboo-rule.png` | 600×42 | the bamboo cane, half cream and half sunset, joining the body to the footer |
+| `footer-crew.jpg` | 600×150 | the site footer's crew and wordmark, on sunset `#FF7733` |
+
+A new form type needs its own `hero-<form_type>.jpg` and an entry in the node's `HEROES`;
+until then it gets the default hero. Changing a word on any image means re-rendering it — the
+words are not in the HTML.
 
 Pedal Pub and Tiki Pub still serve their mastheads from their own live sites
 (`pedalpub.com/favicon.png`, `tikipub.com/images/logo.png`). Those work because those
