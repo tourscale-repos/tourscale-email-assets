@@ -12,7 +12,9 @@ e.g. `logos/tourscale-logo-white.png` →
 <https://tourscale-repos.github.io/tourscale-email-assets/logos/tourscale-logo-white.png>
 
 A file is live only once it is merged to `main` and the Pages deploy finishes. Reference a new
-asset from a template **after** that, or the recipient sees a broken image.
+asset from a template **after** that, or the recipient sees a broken image. That workflow is the
+only deploy path, per the
+[deployment policy](https://github.com/tourscale-repos/tourscale-engineering-policies/blob/main/deployment.md).
 
 `robots.txt` keeps `/training/` out of search results. Nothing here is access-controlled —
 never commit anything that shouldn't be public.
