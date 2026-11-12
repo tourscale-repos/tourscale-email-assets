@@ -51,9 +51,16 @@ Current n8n notification mastheads, each inside the hero cell of the "Format Ema
 |---|---|---|---|---|
 | `brands/paddle-pub/logo-long-email-light.png` | 480×71 | 240×35 | `c.primary` `#0E4E64` | `Paddle Pub - Franchisee Forms`, `Paddle Pub - Newsletter Signups` |
 | `brands/trolley-pub/logo-long-email-light.png` | 480×58 | 240×29 | `c.primary` `#433E3B` | `Trolley Pub - Franchisee Forms`, `Trolley Pub - Newsletter Signups` |
+| `brands/pedal-pub/logo-badge-email.png` | 152×152 | 76×76 | page colour `#F7F4EE`, above the hero | `Pedal Pub - Franchisee Forms`, `Pedal Pub - Newsletter Signups` |
+| `brands/tiki-pub/logo-long-email.png` | 480×101 | 240×50 | page colour, above the hero | `Tiki Pub - Franchisee Forms`, `Tiki Pub - Newsletter Signups` |
+
 The Paddle Pub and Trolley Pub files are the franchise kit's `*-mark-long.svg` wordmarks with
 the dark letters recoloured white and the wheel kept in its brand colour. The older
 `logo-horizontal-email*.png` files stay published because sent emails reference them.
+
+The Pedal Pub and Tiki Pub files are the logos those emails already showed — pedalpub.com's
+`favicon.png` sprocket badge and tikipub.com's `images/logo.png` wordmark — scaled to 2×. They
+are coloured, with transparent backgrounds, and sit on the page colour rather than a dark cell.
 
 ### Cruisin' Tikis notification emails
 
@@ -77,10 +84,6 @@ per submission — the dock, the date, the field values — is live text.
 A new form type needs its own `hero-<form_type>.jpg` and an entry in the node's `HEROES`;
 until then it gets the default hero. Changing a word on any image means re-rendering it — the
 words are not in the HTML.
-
-Pedal Pub and Tiki Pub still serve their mastheads from their own live sites
-(`pedalpub.com/favicon.png`, `tikipub.com/images/logo.png`). Those work because those
-domains already point at the rebuilt sites; move them here if that ever changes.
 
 ## CRM drip assets
 
