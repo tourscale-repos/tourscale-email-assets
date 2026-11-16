@@ -25,6 +25,7 @@ never commit anything that shouldn't be public.
 |---|---|
 | `brands/<brand>/` | per-brand logo variants |
 | `logos/` | TourScale corporate logos |
+| `email/v1/` | The 2026-11 brand refresh email kit's logos, lockups, status pins and fonts, under the same names the kit templates use. Swap the kit's placeholder host `https://cdn.tourscale.com/email/v1/` for `https://tourscale-repos.github.io/tourscale-email-assets/email/v1/` and the logos and fonts resolve. The kit's photos and portal screens aren't here yet |
 | `<campaign>/` | photos for one campaign or announcement (`the-port-2026/`, `conference-2026/`, …) |
 | `drips/<brand>/` | hero photo per email in that brand's CRM drip, `<n>-<slot>.jpg` |
 | `training/` | training material, excluded from robots |
